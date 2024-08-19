@@ -9,4 +9,4 @@ MQTT_TOPIC_PARALLEL="$(jq --raw-output '.mqtt_topic_parallel' $CONFIG_PATH)" \
 MQTT_TOPIC_SETTINGS="$(jq --raw-output '.mqtt_topic_settings' $CONFIG_PATH)" \
 MQTT_TOPIC="$(jq --raw-output '.mqtt_topic' $CONFIG_PATH)" \
 DEVICE="$(jq --raw-output '.device' $CONFIG_PATH)" \
-python /monitor.py
+python3 /monitor.py
