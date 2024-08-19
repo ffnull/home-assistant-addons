@@ -5,10 +5,6 @@ ENV LANG C.UTF-8
 
 COPY requirements.txt /
 
-RUN apk add --no-cache jq && \
-  python3 -m pip install -r requirements.txt && \
-  rm -rf /root/.cache
-
 COPY monitor.py /
 COPY run.sh /
 RUN chmod a+x /run.sh
